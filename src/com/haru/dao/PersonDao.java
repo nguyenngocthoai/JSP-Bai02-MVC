@@ -28,7 +28,6 @@ public class PersonDao {
 	}
 
 	public boolean savePerson(Person p) {
-//		int status = 0;
 		boolean status = false;
 		try {
 			Connection con = PersonDao.getConnection();
@@ -51,7 +50,7 @@ public class PersonDao {
 
 	public List<Person> getAllPersons() {
 		ArrayList<Person> persons = new ArrayList<Person>();
-		Person person=null;
+		Person person = null;
 		String sql = "select * from person";
 		try {
 			Connection con = PersonDao.getConnection();
@@ -60,8 +59,8 @@ public class PersonDao {
 //			Statement ps = con.createStatement();
 			ResultSet rs = con.createStatement().executeQuery(sql);
 			while (rs.next()) {
-				
-				 person = new Person();
+
+				person = new Person();
 				person.setId(rs.getInt(1));
 				person.setFirstName(rs.getString(2));
 				person.setLastName(rs.getString(3));

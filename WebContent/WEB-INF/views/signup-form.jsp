@@ -19,10 +19,10 @@
 			name="reemail" placeholder="Re-enter Email" size="46"> <br>
 			<p style="color: red;">${msg}</p>
 		<br> <input type="text" name="password"
-			placeholder="New Password" size="46"> <br>
+			placeholder="New Password" size="46"> <br><br>
 		<p>Birthday</p>
 		<select name="day">
-			<option>Day</option>
+			<option disabled="disabled">Day</option>
 			<option value="1">1</option>
 			<option value="2">2</option>
 			<option value="3">3</option>
@@ -55,7 +55,7 @@
 			<option value="30">30</option>
 			<option value="31">31</option>
 		</select> <select name="month">
-			<option>Month</option>
+			<option disabled="disabled">Month</option>
 			<option value="01">January</option>
 			<option value="02">Febuary</option>
 			<option value="03">March</option>
@@ -69,7 +69,7 @@
 			<option value="11">November</option>
 			<option value="12">December</option>
 		</select> <select name="year">
-			<option>Year</option>
+			<option disabled="disabled">Year</option>
 			<option value="2020">2020</option>
 			<option value="2019">2019</option>
 			<option value="2018">2018</option>
